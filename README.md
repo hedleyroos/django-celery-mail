@@ -1,4 +1,4 @@
-# Djangio Celery Mail
+# Django Celery Mail
 
 A dead simple method to send and keep track of mails from Django. Mails are automatically
 retried should the mail server be unavailable.
@@ -24,6 +24,8 @@ to immediately execute the mail tasks.
 In production start one or more separate Celery workers. Refer to the Celery documentation.
 
 ## Tests
+
+Redis must be running on port 6379. The tests use database 5.
 
 Install:
 
