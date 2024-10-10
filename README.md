@@ -18,7 +18,7 @@ retried should the mail server be unavailable.
 
 ## Running
 
-In development mode set the environment variable `CELERY_ALWAYS_EAGER=True`
+In development mode set the environment variable `CELERY_TASK_ALWAYS_EAGER=True`
 to immediately execute the mail tasks.
 
 In production start one or more separate Celery workers. Refer to the Celery documentation.
@@ -28,7 +28,7 @@ In production start one or more separate Celery workers. Refer to the Celery doc
 Install:
 
     virtualenv ve
-    ./ve/bin/pip install -r test_requirements.txt
+    ./ve/bin/pip install tox
 
 Run:
 
