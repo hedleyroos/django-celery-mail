@@ -9,7 +9,7 @@ retried should the mail server be unavailable.
 
 2. Add `celery_mail` to your `INSTALLED_APPS` setting.
 
-3. Set `EMAIL_BACKEND` setting to `celery_mail.backens.CeleryFileBackend`.
+3. Set `EMAIL_BACKEND` setting to `celery_mail.backends.CeleryFileBackend`.
 
 4. Set `EMAIL_FILE_PATH` setting to `/tmp/app-messages`.
 
